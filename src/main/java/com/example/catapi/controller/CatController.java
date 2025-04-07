@@ -21,7 +21,7 @@ public class CatController {
     }
 
     // Метод за генериране на определен брой случайни котки
-    @GetMapping("/random")
+    @GetMapping("/random/count")
     public List<Cat> getRandomCats(@RequestParam int count) {
         return catService.generateRandomCats(count);
     }
